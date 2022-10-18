@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2428126780666837276}
   - component: {fileID: 2428126780666837277}
   - component: {fileID: 2428126780666837274}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,6 +100,8 @@ MonoBehaviour:
   speed: 7.5
   theRB: {fileID: 2428126780666837274}
   impactEffect: {fileID: 7364357971205136452, guid: 92fbbbea3f41c6f4b8904c86b79b292f, type: 3}
+  enemyEffect: {fileID: 5301864098970238764, guid: dc13e54b0a902994a9fb5355c6c60f12, type: 3}
+  damageToGive: 50
 --- !u!61 &2428126780666837277
 BoxCollider2D:
   m_ObjectHideFlags: 0
