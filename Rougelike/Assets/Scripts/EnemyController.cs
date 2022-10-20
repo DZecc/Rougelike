@@ -36,12 +36,14 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(theBody.isVisible)
+        if(theBody.isVisible && PlayerController.instance.gameObject.activeInHierarchy)
         {
        if(Vector3.Distance(transform.position, PlayerController.instance.transform.position) < rangeToChasePlayer)
        {
         moveDirection = PlayerController.instance.transform.position - transform.position;
-       } else {
+       } 
+       else 
+       {
         moveDirection = Vector3.zero;
        }
 
@@ -72,6 +74,8 @@ public class EnemyController : MonoBehaviour
             }
 
         }
+        } else{
+            theRB.velocity = Vector2.zero;
         }
     }
 
