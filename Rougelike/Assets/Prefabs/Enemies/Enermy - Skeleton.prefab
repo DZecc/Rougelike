@@ -180,8 +180,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1496410707
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -7537196482120660328, guid: 02027016afbc5d544ab92ba819bc8094, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -283,6 +283,8 @@ MonoBehaviour:
   bullet: {fileID: 6640025444312145238, guid: 5f28bf35034ef3a43a2f2d707f6b2a8f, type: 3}
   firePoint: {fileID: 5493008788113079129}
   fireRate: 1
+  shootRange: 0
+  theBody: {fileID: 0}
 --- !u!50 &5955270222359289150
 Rigidbody2D:
   serializedVersion: 4

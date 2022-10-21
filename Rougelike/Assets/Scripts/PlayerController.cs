@@ -79,6 +79,7 @@ public class PlayerController : MonoBehaviour
 
         if(Input.GetMouseButtonDown(0))
             {
+                AudioManager.instance.PlaySFX(12);
                 Instantiate(bulletToFire, firePoint.position, firePoint.rotation);
             }
         if(Input.GetMouseButton(0))
@@ -87,6 +88,7 @@ public class PlayerController : MonoBehaviour
 
             if(shotCounter <= 0)
             {
+                AudioManager.instance.PlaySFX(12);
                 Instantiate(bulletToFire, firePoint.position, firePoint.rotation);
 
                 shotCounter = timeBetweenShots;
@@ -95,6 +97,8 @@ public class PlayerController : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
+            AudioManager.instance.PlaySFX(8);
+
             if(dashCoolCounter <= 0 && dashCounter <= 0)
             {
             activeMoveSpeed = dashSpeed;
