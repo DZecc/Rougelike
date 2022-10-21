@@ -25,8 +25,13 @@ public class PlayerBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+
+        AudioManager.instance.PlaySFX(4);
         if(other.tag == "Enemy")
         {
+
+        AudioManager.instance.PlaySFX(2);
+        
         other.GetComponent<EnemyController>().DamageEnemy(damageToGive);
 
         Instantiate(enemyEffect, transform.position, transform.rotation);
